@@ -1,12 +1,10 @@
 
-{"menu": {
-  "id": "file",
-  "value": "File",
-  "popup": {
-    "menuitem": [
-      {"value": "New", "onclick": "CreateNewDoc()"},
-      {"value": "Open", "onclick": "OpenDoc()"},
-      {"value": "Close", "onclick": "CloseDoc()"}
+{"moose": {
+  "id": 1,
+  "name": "Moose",
+  "stats": [
+      {"hp": 40},
+      {"power": 45},
+      {"speed": 71}
     ]
-  }
 }}

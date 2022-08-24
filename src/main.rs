@@ -1,3 +1,6 @@
+
+pub mod readFile;
+
 fn main() {
-    println!("Hello, world!");
+    readFile::read_f("moose.json".to_string());
 }
