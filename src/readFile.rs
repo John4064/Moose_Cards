@@ -1,6 +1,16 @@
 use std::fmt;
 use std::fs;
 
+pub struct Card;
+pub fn print_f(contents: String){
+    println!("{}",contents);
+    return;
+}
+
+pub fn string_to_card(contents: String) -> Card{
+
+    
+}
 
 
 pub fn read_f(file_name: String) -> String {
