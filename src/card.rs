@@ -1,15 +1,15 @@
 use serde::{Serialize, Deserialize};
 
 
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Deserialize, Serialize, Debug)]
 pub struct Card {
     id: i32,
     name: String,
     card_stats: Stats
 }
 
+#[derive(Deserialize, Serialize, Debug)]
 
-#[derive(Serialize, Deserialize, Debug)]
 struct Stats{
     hp: i32,
     power: i32,
