@@ -8,8 +8,8 @@ pub fn print_f(contents: String){
 }
 
 pub fn string_to_card(contents: String) -> Card{
-
-    
+    let temp_card=serde_json::from_str(&contents).unwrap();
+    return temp_card
 }
 
 
