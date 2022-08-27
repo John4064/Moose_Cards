@@ -1,0 +1,10 @@
+{
+  "id": 1,
+  "type": "item",
+  "item_name": "Icarus's Dagger",
+  "item_description": "The Legendary Dagger of Icarus",
+  "item_stats": {
+    "power": 10,
+    "speed": 25
+  }
+}
