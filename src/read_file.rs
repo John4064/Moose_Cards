@@ -1,5 +1,6 @@
 // use std::fmt;
 use std::fs;
+use crate::UnitCard;
 
 pub struct Card;
 pub fn print_f(contents: String){
@@ -16,11 +17,12 @@ pub fn print_f(contents: String){
 // }
 
 
-pub fn read_f(file_name: String) -> String {
+pub fn read_f(file_name: String) -> UnitCard {
     /**
-    @return: File contents as a string
+    @brief: read the file to string format, then parses to a custom struct
+    @return: The File Contents as a Card Struct
     **/
     let contents: String = fs::read_to_string("./card_stats/moose.json")
         .expect("Something went wrong reading the file");
-    return contents;
+    return serde_json::from_str(&*contents).unwrap();;
 }

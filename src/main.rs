@@ -1,12 +1,12 @@
-use crate::card::Card;
+use std::borrow::Borrow;
+use crate::card::UnitCard;
 
 pub mod read_file;
 pub mod card;
 
 fn main() {
-    let file_contents= read_file::read_f("moose.json".to_string());
-    
-    let deserialized: Card = serde_json::from_str(&*file_contents).unwrap();
-    println!("Hi");
-    //readFile::print_f(file_contents);
+    let temp_unit:UnitCard = read_file::read_f("moose.json".to_string());
+
+
+    println!("{}",temp_unit.borrow("id"))
 }

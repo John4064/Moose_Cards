@@ -2,7 +2,7 @@ use serde::{Serialize, Deserialize};
 
 
 #[derive(Deserialize, Serialize, Debug)]
-pub struct Card {
+pub struct UnitCard {
     id: i32,
     name: String,
     card_stats: Stats
