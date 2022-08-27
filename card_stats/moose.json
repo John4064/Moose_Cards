@@ -1,10 +1,9 @@
-
-{"Card": {
+{
   "id": 1,
   "name": "Moose",
-  "Stats": [
-      {"hp": 40},
-      {"power": 45},
-      {"speed": 71}
-    ]
-}}
+  "card_stats": {
+      "hp": 40,
+      "power": 45,
+      "speed": 71
+    }
+}

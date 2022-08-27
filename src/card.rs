@@ -9,7 +9,6 @@ pub struct Card {
 }
 
 #[derive(Deserialize, Serialize, Debug)]
-
 struct Stats{
     hp: i32,
     power: i32,
