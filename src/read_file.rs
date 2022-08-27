@@ -1,4 +1,4 @@
-use std::fmt;
+// use std::fmt;
 use std::fs;
 
 pub struct Card;
@@ -7,10 +7,13 @@ pub fn print_f(contents: String){
     return;
 }
 
-pub fn string_to_card(contents: String) -> Card{
-    let temp_card=serde_json::from_str(&contents).unwrap();
-    return temp_card
-}
+// pub fn string_to_card(contents: String) -> Card{
+//     let temp_card=serde_json::from_str(&contents).unwrap();
+//
+//
+//
+//     return temp_card
+// }
 
 
 pub fn read_f(file_name: String) -> String {
