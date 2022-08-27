@@ -1,6 +1,6 @@
 {
   "id": 1,
-  "type": "unit",
+  "card_type": "unit",
   "name": "Moose",
   "description": "A mean lean killing machine",
   "card_stats": {
