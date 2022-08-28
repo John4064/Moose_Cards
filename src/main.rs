@@ -6,5 +6,5 @@ pub mod card;
 fn main() {
     let temp_unit:ItemCard = read_file::read_f("items/dagger.json".to_string());
     let albino: test = test{ id: 0, name: "".to_string() };
-    println!("{}",test::);
+    println!("{}",temp_unit.print_val());
 }
