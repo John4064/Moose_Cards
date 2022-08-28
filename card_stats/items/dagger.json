@@ -5,6 +5,7 @@
   "item_description": "The Legendary Dagger of Icarus",
   "item_stats": {
     "power": 10,
-    "speed": 25
+    "speed": 25,
+    "hp": 0
   }
 }

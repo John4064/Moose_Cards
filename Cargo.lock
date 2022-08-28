@@ -6,6 +6,7 @@ version = 3
 name = "Moose_Cards"
 version = "0.0.1"
 dependencies = [
+ "lombok",
  "serde",
  "serde_json",
 ]
@@ -15,6 +16,17 @@ name = "itoa"
 version = "1.0.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6c8af84674fe1f223a982c933a0ee1086ac4d4052aa0fb8060c12c6ad838e754"
+
+[[package]]
+name = "lombok"
+version = "0.3.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5187642d1287622bffecdec7f70f0a961dce14d03b9173374e1f5f615b798dea"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
 
 [[package]]
 name = "proc-macro2"

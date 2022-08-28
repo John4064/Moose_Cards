@@ -1,5 +1,5 @@
 use serde::{Serialize, Deserialize};
-
+use lombok::{Builder};
 
 #[derive(Deserialize, Serialize, Debug)]
 pub struct UnitCard {
@@ -18,10 +18,21 @@ struct Stats{
 }
 
 #[derive(Deserialize, Serialize, Debug)]
-struct ItemCard{
+pub struct ItemCard{
     id: i32,
-    item_type: String,
+    card_type: String,
     item_name: String,
     item_description : String,
     item_stats: Stats
+}
+
+impl ItemCard{
+    pub fn print_val(&self) -> &String{
+        return &self.item_name;
+    }
+}
+#[derive(Builder, Debug)]
+pub struct test{
+    pub id: i32,
+    pub name : String
 }
