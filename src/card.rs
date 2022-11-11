@@ -10,7 +10,7 @@ pub struct UnitCard {
 }
 
 #[derive(Deserialize, Serialize, Debug)]
-struct Stats{
+pub struct Stats{
     hp: i32,
     power: i32,
     speed: i32
@@ -68,6 +68,9 @@ impl ItemCard{
         return &self.item_stats;
     }
     //Setters(IN PROGRESS)
+    pub fn print_val(&self){
+        println!("{} and {}",self.item_name,self.item_description);
+    }
 }
 impl Stats{
     // hp: i32,
@@ -84,7 +87,6 @@ impl Stats{
     }
 }
 
-#[derive(Builder, Debug)]
 pub struct test{
     pub id: i32,
     pub name : String
